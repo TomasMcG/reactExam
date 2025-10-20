@@ -1,4 +1,6 @@
 # React In-class Exam, October 2025
+Name: Tomas McGrath,
+Student Number: 20103551
 
 ## 1. Setup instructions
 
@@ -67,7 +69,7 @@ Add your name and student number to the README.md file, as shown below:
 ~~~markdown
 # React In-class Exam, October 2025
 
-Your Name, Student Number
+Your Name: Tomas McGrath, Student Number: 20103551
 ...
 ~~~
 

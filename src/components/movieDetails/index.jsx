@@ -58,6 +58,9 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
           icon={<StarRate />}
           label={`${movie.vote_average} (${movie.vote_count})`}
         />
+         <Chip
+          label={`Original Language: ${movie.original_language}`}
+        />
         <Chip label={`Released: ${movie.release_date}`} />
       </Paper>
 

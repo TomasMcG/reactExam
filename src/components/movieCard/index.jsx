@@ -32,6 +32,8 @@ export default function MovieCard({ movie, action }) {
   };
 
 
+
+
   return (
     <Card>
       <CardHeader

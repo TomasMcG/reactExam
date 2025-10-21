@@ -12,9 +12,11 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import CalendarIcon from "@mui/icons-material/CalendarTodayTwoTone";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import IconButton from "@mui/material/IconButton";
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import Grid from "@mui/material/Grid";
 import Avatar from '@mui/material/Avatar';
 import img from '../../images/film-poster-placeholder.png';
+
 
 export default function MovieCard({ movie, action }) { 
 
@@ -30,6 +32,12 @@ export default function MovieCard({ movie, action }) {
     e.preventDefault();
     addToFavorites(movie);
   };
+  
+   const percentage = (e) => {
+    e = (e/10 * 100)
+    return Math.round(e);
+  };
+  
 
 
 
@@ -69,8 +77,8 @@ export default function MovieCard({ movie, action }) {
           </Grid>
           <Grid size={{ xs: 6 }}>
             <Typography variant="h6" component="p">
-              <StarRateIcon fontSize="small" />
-              {"  "} {movie.vote_average}{" "}
+              <ThumbUpOffAltIcon fontSize="small" />
+              {"  "} {percentage(movie.vote_average)}{"%"}
             </Typography>
           </Grid>
         </Grid>
